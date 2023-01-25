@@ -12,3 +12,7 @@ export function getRandomPrompt(prompt) {
 export async function downloadImage(_id, photo) {
     FileSaver.saveAs(photo, `photo-${_id}.jpg`)
 }
+
+export function getYear() {
+    return new Date().getFullYear()
+}

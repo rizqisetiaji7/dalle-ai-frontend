@@ -72,9 +72,10 @@ const CreatePost = () => {
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[480px]">Create imaginative and visually stunning images through by DALL-E AI and sare them with the community</p>
       </div>
 
-      <form className="mt-14 max-w-3xl" onSubmit={ handleSubmit }>
+      <form className="mt-14 max-w-3xl" onSubmit={ handleSubmit } autoComplete="off">
         <div className="flex flex-col gap-5">
           <FormField 
+            autoFocus
             labelName="Your name" 
             type="text" 
             name="name" 
@@ -84,7 +85,7 @@ const CreatePost = () => {
           />
 
           <FormField 
-            labelName="Prompt" 
+            labelName="Type your prompt or" 
             type="text" 
             name="prompt" 
             placeholder="A plush toy robot sitting against a yellow wall" 
