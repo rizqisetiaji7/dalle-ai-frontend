@@ -19,7 +19,7 @@ const App = () => {
                </Routes>
             </main>
             <footer className="mt-5 p-4 text-center text-sm">
-               <p>{ document.write(new Date().getFullYear()) } &copy; Copyright. Design & Develope by <a href="https://github.com/rizqisetiaji7" target="_blank">Rizqi Setiaji</a></p>
+               <p>2023 &copy; Copyright. Design & Develope by <a href="https://github.com/rizqisetiaji7" target="_blank">Rizqi Setiaji</a></p>
             </footer>
          </div>
       </BrowserRouter>
