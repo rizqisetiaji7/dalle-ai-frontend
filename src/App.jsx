@@ -11,12 +11,17 @@ const App = () => {
             <Link to={'/create-post'} className="text-sm font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md">Create</Link>
          </header>
 
-         <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
-            <Routes>
-               <Route path='/' element={<Home />}></Route>
-               <Route path='/create-post' element={<CreatePost />}></Route>
-            </Routes>
-         </main>
+         <div className="flex flex-col justify-between gap-5 min-h-screen">
+            <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
+               <Routes>
+                  <Route path='/' element={<Home />}></Route>
+                  <Route path='/create-post' element={<CreatePost />}></Route>
+               </Routes>
+            </main>
+            <footer className="mt-5 p-4 text-center text-sm">
+               <p>{ document.write(new Date().getFullYear()) } &copy; Copyright. Design & Develope by <a href="https://github.com/rizqisetiaji7" target="_blank">Rizqi Setiaji</a></p>
+            </footer>
+         </div>
       </BrowserRouter>
    )
 }
