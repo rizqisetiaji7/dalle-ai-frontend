@@ -62,7 +62,7 @@ const Home = () => {
       </div>
 
       <div className="mt-14">
-        <FormField handleChange={handleSearchChange} labelName="Search posts" type="text" name="text" placeholder="Search posts" value={searchText} />
+        <FormField autoFocus autocomplete="off" handleChange={handleSearchChange} labelName="Search posts" type="text" name="text" placeholder="Search posts" value={searchText} />
       </div>
 
       <div className="mt-8">
